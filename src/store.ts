@@ -1,14 +1,14 @@
 import {reactive, readonly} from "vue"
 
 const state = reactive({
-    counter: 0
+    showMenu: 'close'
 })
 
-const UPDATE_COUNTER = (value: number) => {
-    state.counter = value
+const UPDATE_MENU = (value: string) => {
+    state.showMenu = value
 }
 
 export default {
     state: readonly(state),
-    UPDATE_COUNTER
+    UPDATE_MENU
 }
